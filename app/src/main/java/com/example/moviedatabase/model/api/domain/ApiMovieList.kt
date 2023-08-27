@@ -1,4 +1,4 @@
-package com.example.moviedatabase.api.domain
+package com.example.moviedatabase.model.api.domain
 
 data class ApiMovieList(
     val page: Int,

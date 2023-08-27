@@ -1,9 +1,11 @@
-package com.example.moviedatabase
+package com.example.moviedatabase.view
 
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
+import com.example.moviedatabase.viewmodel.MainViewModel
+import com.example.moviedatabase.viewmodel.MovieAdapter
 import com.example.moviedatabase.databinding.ActivityMainBinding
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -26,7 +28,7 @@ class MainActivity : AppCompatActivity() {
         _binding.moviesRecyclerView.adapter = adapter
 
         adapter.updateData(viewmodel.getMockData())
-//        viewmodel.getMovies()
+    //viewmodel.getMovies()
     }
 
 }

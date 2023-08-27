@@ -1,14 +1,13 @@
-package com.example.moviedatabase
+package com.example.moviedatabase.viewmodel
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.lifecycle.LiveData
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.moviedatabase.Constants.MOVIE_PATH
 import com.example.moviedatabase.databinding.MovieItemBinding
-import com.example.moviedatabase.api.domain.ApiMovie
+import com.example.moviedatabase.model.api.domain.ApiMovie
 
 
 class MovieAdapter() :
@@ -20,8 +19,8 @@ class MovieAdapter() :
     // Create new views (invoked by the layout manager)
     override fun onCreateViewHolder(viewGroup: ViewGroup, viewType: Int): MovieViewHolder {
         // Create a new view, which defines the UI of the list item
-//        val view = LayoutInflater.from(viewGroup.context)
-//            .inflate(R.layout.text_row_item, viewGroup, false)
+        //        val view = LayoutInflater.from(viewGroup.context)
+        //            .inflate(R.layout.text_row_item, viewGroup, false)
 
         val binding =
             MovieItemBinding.inflate(LayoutInflater.from(viewGroup.context), viewGroup, false)
@@ -34,7 +33,7 @@ class MovieAdapter() :
 
         // Get element from your dataset at this position and replace the
         // contents of the view with that element
-//        viewHolder.textView.text = dataSet[position]
+        //        viewHolder.textView.text = dataSet[position]
 
         val currentItem = moviesData[position]
 
